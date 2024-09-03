@@ -4,34 +4,39 @@
 /* WEBSITE THEME */
 
 :root {
-  --hue-1: 257;
-  --hue-2: 47;
-  --main-color-1: hsl(var(--hue-1), 100%, 60%);
-  --main-color-dark-1: hsl(var(--hue-1), 69%, 50%);
-  --main-color-2: hsl(var(--hue-2), 100%, 61%);
-  --main-color-dark-2: hsl(var(--hue-2), 82%, 55%);
+  --hue-1: 45;  /* Ciepły beżowy odcień */
+  --hue-2: 30;  /* Jasna kość słoniowa */
+  --main-color-1: #e0d7c7; /* Wzmocniony beżowy odcień, zbliżony do tła na obrazie */
+  --main-color-dark-1: #d0c4b4; /* Ciemniejszy beż, bardziej kontrastujący */
+  --main-color-2: #f8f1e9; /* Bardzo jasna kość słoniowa, prawie biała */
+  --main-color-dark-2: #b8a897; /* Ciemniejszy, bardziej wyrafinowany beż */
+  --accent-color-1: #9e8f7f; /* Wyraźny, ale stonowany brązowo-beżowy akcent */
+  --accent-color-2: #7d6c5c; /* Ciemniejszy, bardziej kontrastowy akcent */
   --section-padding: 7rem;
 }
 
 body {
-  --bg-color: hsl(var(--hue-1), 100%, 97%);
-  --bg-color-1: hsl(var(--hue-1), 100%, 95.5%);
-  --bg-color-2: #fff;
-  --bg-color-3: hsl(var(--hue-1), 100%, 98%);
-  --bg-color-transparent: rgba(255,255,255, 0.6);
-  --heading-color: hsl(var(--hue-1), 61%, 24%);
-  --text-color: hsl(var(--hue-1), 17%, 63%);
+  --bg-color: #f8f1e9; /* Bardzo jasne tło, kość słoniowa */
+  --bg-color-1: #e0d7c7; /* Ciepły, bardziej wyraźny beż */
+  --bg-color-2: #d0c4b4; /* Jeszcze bardziej kontrastujący beż */
+  --bg-color-3: #f2ebe1; /* Jasny, ale bardziej wyrazisty beż */
+  --bg-color-transparent: rgba(224, 215, 199, 0.8); /* Transparentny, wzmocniony beż */
+  --heading-color: #3a3a3a; /* Głęboki, neutralny szary dla lepszego kontrastu nagłówków */
+  --text-color: #4a4a4a; /* Mocniejszy szary dla tekstu, lepszy kontrast z tłem */
+  --accent-color: #7d6c5c; /* Ciemniejszy, wyraźny akcent */
 }
 
 body.dark {
-  --bg-color: hsl(var(--hue-1), 19%, 15%);
-  --bg-color-1: hsl(var(--hue-1), 21%, 11%);
-  --bg-color-2: hsl(var(--hue-1), 23%, 19%);
-  --bg-color-3: hsl(var(--hue-1), 23%, 24%);
-  --bg-color-transparent: hsla(var(--hue-1), 23%, 19%, 0.6);
-  --heading-color: hsl(var(--hue-1), 100%, 95%);
-  --text-color: hsl(var(--hue-1), 14%, 51%);
+  --bg-color: #3e3e3e; /* Ciemniejsze, neutralne tło */
+  --bg-color-1: #2c2c2c; /* Głębszy szary, ciemniejsze tło */
+  --bg-color-2: #4a4a4a; /* Jaśniejszy szary jako akcent tła */
+  --bg-color-3: #585858; /* Najjaśniejszy szary dla subtelnych akcentów */
+  --bg-color-transparent: rgba(62, 62, 62, 0.8); /* Transparentny ciemny szary */
+  --heading-color: #f8f1e9; /* Jasne, eleganckie nagłówki */
+  --text-color: #e0d7c7; /* Subtelny, jasny beżowy dla tekstu */
+  --accent-color: #b8a897; /* Neutralny beżowy akcent, aby ożywić ciemniejsze tło */
 }
+
 
 body.dark .st1 {
   fill: hsl(var(--hue-1), 18%, 29%);
@@ -448,10 +453,12 @@ body.open .hamburger .bar:last-child {
 
 .showcase-image .person {
   position: absolute;
-  width: 95%;
-  bottom: 0;
-  left: 50%;
+  width: 75%;
+  bottom: 1%;
+  left: 52%;
+  height: 110%;
   transform: translateX(-50%);
+  border-radius: 0 0 40px 40px;
 }
 
 .showcase-area .circle {
@@ -1277,6 +1284,12 @@ footer .social-media {
   color: var(--main-color-1);
 }
 
+.small-print {
+  padding-top: 50px;
+  font-size: 0.8em;
+  color: #666; /* Jasny kolor, aby podkreślić, że to dodatkowa informacja */
+}
+
 /* 1000px screens */
 
 @media (max-width: 1000px) {
@@ -1374,7 +1387,6 @@ footer .social-media {
     font-size: 0.7rem;
   }
 }
-
 
 /* 768px screens */
 
